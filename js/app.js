@@ -27,7 +27,7 @@ function compute(){
     var monthlyPayment = (principal * temp * interest)/(temp - 1);
 
     // Display Output while also validating
-    if(!isFinite(monthlyPayment)){
+    if(isNaN(monthlyPayment)){
         monthlyPay.value = "";
         totalPay.value = "";
         totalIntPay.value = "";
